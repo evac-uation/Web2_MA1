@@ -1,0 +1,180 @@
+body {
+    background-color: #fdebde;
+    text-align: center;
+    color:#715d55;
+}
+
+.volina_font {
+  font-family: "volina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.magnolia_font {
+  font-family: "magnolia-mvb", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav {
+    font-size: x-large;
+    list-style-type: none;
+    background-color: #fdebde;
+    margin: 0;
+    padding: 5;
+    overflow: hidden;}
+
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: #715d55;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  font-weight:900;
+}
+
+.clicked {
+  font-weight:900;
+}
+
+.title {
+  font-size: 75px;
+  margin-top: 10px;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.mycontainer {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+}
+
+
+.mycontainer2 {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+}
+
+.mycontainer p {
+  max-width: 400px;
+  text-align: left;
+  font-size: large;
+}
+
+.img_wrap {
+  position:relative;
+  height:300px;
+  width: 300px;
+}
+
+.instructions{
+  position: absolute;
+  inset: 0;
+  background: #fbece2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+  
+.img_wrap:hover .instructions {
+  opacity: 0.9;
+}
+
+.img_hover {
+  width: 300px;
+}
+
+.side_text{
+  max-width: 400px;
+  text-align: left;
+}
+
+.moving_smile{
+  animation-name: moving-smile;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease;
+}
+
+@keyframes moving-smile {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(300px);}
+}
+
+.moving_text{
+  animation-name: moving-text;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease;
+}
+
+@keyframes moving-text {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(200px);}
+}
+
+.spin{
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.mycontainer3 {
+  display:grid;
+  grid-template-columns: 10% 20% 30% 40%;
+  gap: 10px;
+  justify-items: center;
+} 
+
+.mycontainer4 {
+  display:grid;
+  grid-template-columns: 40% 30% 20% 10%;
+  gap: 10px;
+  justify-items: center;
+} 
+
+  div.scroll-container {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    height: 320px;
+    overflow-y: hidden; 
+    scrollbar-width: thin;
+  }
+
+  .container_contact{
+      display:grid;
+      grid-template-columns: auto auto auto;
+      gap: 30px;
+      align-items: left;
+  }
+
+.email:hover{
+  opacity: 0.8;
+}
